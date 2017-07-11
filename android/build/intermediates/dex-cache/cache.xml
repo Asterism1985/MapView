@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_bf8681f3ecd4e5f85d032c1aaa5907c9266e93ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_06ab1ed93a0b150953167e38b43562170c6d0336.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_1873c7f88f47aa34c1bb0c90b89490255e790d16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_dd027aa9b03a4a9cd1de9233f0da93dfbc33df9a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_599385431d158c1ba94ba2c178dc5d1379c2d268.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_3b6e9ec84c67ca514b69ef15151991fe27954fbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_49410327549467633eca6259455e08699fda02e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_22018467b5d8237a05adb51cf89644db299e7392.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_670a912fe7d09b357241426204843a9d1c85e141.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_dd46a6e10b3f71d1c5e5ea902db49f07f640210f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_60b305f3d80631dd4d90a1ad755d0899c055ebf7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.4_c33b48721908852883bfb0535344e13112785143.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_92801cd5f0a3c3ef3263023d8a9d4bec0dc5fcc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_72c910e68e5c95b16ce998a7c1ce00d97ac301ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_39fca36f6d2e9f712fcbdcaa8e429dad881c8049.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.4_7bc53ffca8b7a2f02578d368bc5b853669dabbc4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.4_c413b4d5ec6d50e4a4e13360a1724e9abd6735ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.4_9d6c719b4311e3a818ec0b32f913bcd76162a0d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_5d3d20676236c8caf8c6a310cca74d9fd26cb62c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/MapApp/react-native-maps/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5cfa49f964d9ec42d13b5c2f8bc222d2a8feab">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/MapApp-react-native-maps-unspecified_74cd060b6137fa43bc14fea9231be10974387d66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_6c28a59e228d0c21e31693ef164bef566c29932e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_ac8f6f77ce9ea47b411f947e90e6073daffdcf0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_04370b1c33617267167cea1c98b16d0417b279fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_88f3b808a3e3525c1bb4ecff6f337eccbc3ce578.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_d7a86ba34646924123d6d5dae3864562ad9296ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.46.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c5526d30278eb171f4a1325bd6b927c9057c91f4">
+        <dex dex="/Users/asterism/Documents/Work/Map/MapApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.46.1_98a0929eee3480075613bd0f802da8d71b5fa0dc.jar" />
+    </item>
+
+</items>
