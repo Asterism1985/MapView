@@ -8,138 +8,195 @@ import {
   AppRegistry,
   StyleSheet,
   Dimensions,
+  ScrollView,
+  TouchableOpacity,
+  TouchableHighlight,
+  Modal,
   Image,
   Text,
   View
 } from 'react-native';
-import MapView from 'react-native-maps';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-import CustomCallout from './components/CustomCallout';
-import PinMark from './assets/pin_marker2.png';
-import image1 from './assets/templete1.png';
+import * as Icons from './components/Icons';
 
 const { width, height } = Dimensions.get('window');
 
-const ASPECT_RATIO = width / height;
-const LATITUDE = 37.78825;
-const LONGITUDE = -122.4324;
-const LATITUDE_DELTA = 0.0922;
-const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
-const SPACE = 0.01;
+
+const PinImage = (location, x, y, i, onPress) => (
+  <View key={i} style={{ height: 60, width: 80, position: 'absolute', top: x, left: y, padding: 5, justifyContent: 'center', alignItems: 'center' }} >
+    <View style={{ height: 35, width: 28 }} >
+      <TouchableOpacity onPress={() => onPress(i)} >
+        <Image style={{ height: 35, width: 28 }} resizeMode='stretch' source={require('./assets/pin1.png')} />
+      </TouchableOpacity>
+    </View>
+    <Text style={{ fontSize: 10, color: 'white' }} >{location}</Text>
+  </View>
+);
 
 export default class Map extends Component {
 
   static propTypes = {
-    provider: MapView.ProviderPropType,
   };
 
   constructor(props) {
     super(props);
 
     this.state = {
-      region: {
-        latitude: LATITUDE,
-        longitude: LONGITUDE,
-        latitudeDelta: LATITUDE_DELTA,
-        longitudeDelta: LONGITUDE_DELTA,
-      },
-      markers1: [
-        {
-          coordinate: {
-            latitude: LATITUDE + 2*SPACE,
-            longitude: LONGITUDE + 2*SPACE,
-          },
-        },
-        {
-          coordinate: {
-            latitude: LATITUDE - 2*SPACE,
-            longitude: LONGITUDE - 2*SPACE,
-          },
-        }],
       markers: [
         {
-          coordinate: {
-            latitude: LATITUDE + SPACE,
-            longitude: LONGITUDE + SPACE,
-          },
+          name: 'Bedford',
+          lat: 372,
+          long: 690,
         },
         {
-          coordinate: {
-            latitude: LATITUDE,
-            longitude: LONGITUDE,
-          },
+          name: 'Plaza',
+          lat: 0,
+          long: 525,
         },
         {
-          coordinate: {
-            latitude: LATITUDE + SPACE,
-            longitude: LONGITUDE - SPACE,
-          },
+          name: 'Times Square',
+          lat: 40,
+          long: 478,
+        },
+        {
+          name: 'Grand Central',
+          lat: 30,
+          long: 555,
+        },
+        {
+          name: 'Bryant',
+          lat: 65,
+          long: 520,
+        },
+        {
+          name: 'Herald Square',
+          lat: 96,
+          long: 438,
+        },
+        {
+          name: 'Madison',
+          lat: 132,
+          long: 455,
+        },
+        {
+          name: 'Qlabs',
+          lat: 138,
+          long: 426,
+        },
+        {
+          name: 'Park Ave South',
+          lat: 132,
+          long: 518,
+        },
+        {
+          name: 'Meatpacking',
+          lat: 160,
+          long: 375,
+        },
+        {
+          name: 'Flatiron',
+          lat: 162,
+          long: 475,
+        },
+        {
+          name: 'Union Sq2',
+          lat: 185,
+          long: 415,
+        },
+        {
+          name: 'Union Sq1',
+          lat: 184,
+          long: 435,
+        },
+        {
+          name: 'Soho West',
+          lat: 300,
+          long: 350,
+        },
+        {
+          name: 'Houston',
+          lat: 280,
+          long: 386,
+        },
+        {
+          name: 'Cooper Square',
+          lat: 283,
+          long: 436,
+        },
+        {
+          name: 'Lower East Side',
+          lat: 353,
+          long: 483,
+        },
+        {
+          name: 'Dumbo',
+          lat: 503,
+          long: 485,
+        },
+        {
+          name: 'Fidi',
+          lat: 475,
+          long: 323,
+        },
+        {
+          name: 'Battery',
+          lat: 503,
+          long: 303,
         },
       ],
+      isVisible: false,
+      selected: 0,
     };
+
+    this.onShowDetails = this.onShowDetails.bind(this);
   }
 
-  onRegionChange(region) {
-    this.state.region.setValue(region);
+  onShowDetails(idx) {
+    this.setState({
+      isVisible: true,
+      selected: idx
+    });
+  }
+
+  onClose() {
+    this.setState({
+      isVisible: false
+    });
   }
 
   render() {
-    const { region, markers1, markers } = this.state;
     return (
       <View style={styles.container}>
-        <MapView
-          provider={this.props.provider}
-          style={styles.map}
-          initialRegion={region}
+        <ScrollView style={styles.contentView}
+          vertical={true}
+          horizontal={true}
         >
-          <MapView.Marker
-            ref={ref => { this.marker1 = ref; }}
-            coordinate={markers1[0].coordinate}
-            title="This is a native view"
-            description="This is a default information description view type" // eslint-disable-line max-len
-          />
+          <Image resizeMode='stretch' source={require('./assets/bg.png')} >
+          {this.state.markers.map((marker, i) => (
+            PinImage(marker.name, marker.lat, marker.long, i, this.onShowDetails)
+          ))}
+          </Image>
+        </ScrollView>
 
-          {this.state.markers.map(marker => (
-            <MapView.Marker
-              coordinate={marker.coordinate}
-              image={PinMark}
-            >
-              <MapView.Callout style={styles.plainView}>
-                <View>
-                  <Image style={styles.imageView} resizeMode='stretch' source={require('./assets/templete2.jpg')} />
-                  <Text>Title: This is a plain view</Text>
+        <Modal
+          animationType={"fade"}
+          transparent={true}
+          visible={this.state.isVisible}
+          onRequestClose={() => {this.onClose()}}
+        >
+          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' }}>
+            <TouchableHighlight onPress={() => this.onClose()}>
+              <View style={styles.bubble}>
+                <Image style={styles.imageView} resizeMode='stretch' source={require('./assets/templete2.jpg')} />
+                <View style={{paddingTop: 10}}>
+                  <Text>Title: {this.state.markers[this.state.selected].name} </Text>
                   <Text>Description: This is a plain view</Text>
                 </View>
-              </MapView.Callout>
-            </MapView.Marker>
-          ))}
-
-          <MapView.Marker
-            coordinate={markers1[1].coordinate}
-            calloutOffset={{ x: -8, y: 28 }}
-            calloutAnchor={{ x: 0.5, y: 0.4 }}
-          >
-            <MapView.Callout tooltip style={styles.customView}>
-              <CustomCallout>
-                <Text>This is a custom callout bubble view</Text>
-              </CustomCallout>
-            </MapView.Callout>
-          </MapView.Marker>
-        </MapView>
-        {/*<View style={styles.buttonContainer}>
-          <View style={styles.bubble}>
-            <Text>Tap on markers to see different callouts</Text>
+              </View>
+            </TouchableHighlight>
           </View>
-        </View>
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity onPress={() => this.show()} style={[styles.bubble, styles.button]}>
-            <Text>Show</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => this.hide()} style={[styles.bubble, styles.button]}>
-            <Text>Hide</Text>
-          </TouchableOpacity>
-        </View>*/}
+        </Modal>
       </View>
     );
   }
@@ -147,47 +204,31 @@ export default class Map extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'transparent'
+  },
+  contentView: {
+    flex: 1,
+    backgroundColor: 'transparent'
+  },
   customView: {
     width: 140,
     height: 100,
   },
-  plainView: {
-    width: 150,
-  },
   imageView: {
     width: 150,
     height: 90,
-    padding: 5,
-  },
-  container: {
-    ...StyleSheet.absoluteFillObject,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-  map: {
-    ...StyleSheet.absoluteFillObject,
+    padding: 15,
   },
   bubble: {
-    flex: 1,
-    backgroundColor: 'rgba(255,255,255,0.7)',
+    width: 180,
+    height: 200,
+    backgroundColor: 'white',
     paddingHorizontal: 18,
     paddingVertical: 12,
-    borderRadius: 20,
-  },
-  latlng: {
-    width: 200,
-    alignItems: 'stretch',
-  },
-  button: {
-    width: 80,
-    paddingHorizontal: 12,
+    borderRadius: 10,
     alignItems: 'center',
-    marginHorizontal: 10,
-  },
-  buttonContainer: {
-    flexDirection: 'row',
-    marginVertical: 20,
-    backgroundColor: 'transparent',
   },
 });
 
